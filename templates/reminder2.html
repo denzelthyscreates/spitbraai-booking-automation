@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50% Deposit Due - Thys Gemaak Spitbraai</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: white;">
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #ff6b35, #f7931e); padding: 30px 20px; text-align: center;">
+            <h1 style="color: white; margin: 0; font-size: 28px;">📅 Your Event Approaches!</h1>
+            <p style="color: white; margin: 10px 0 0 0; font-size: 16px;">50% deposit payment due</p>
+        </div>
+
+        <!-- Main Content -->
+        <div style="padding: 30px 20px;">
+            <h2 style="color: #333; margin-top: 0;">Hi {{customerName}},</h2>
+            
+            <p style="color: #666; line-height: 1.6; font-size: 16px;">
+                Your spitbraai event on <strong>{{eventDate}}</strong> is approaching! We're excited to make it an unforgettable experience for you and your guests.
+            </p>
+
+            <p style="color: #666; line-height: 1.6; font-size: 16px;">
+                As per our payment schedule, your <strong>50% deposit of R{{depositAmount}}</strong> is now due to continue with the preparations for your event.
+            </p>
+
+            <!-- Payment Due Notice -->
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="color: #856404; margin-top: 0;">💰 Payment Due</h3>
+                <p style="color: #856404; margin: 0;">
+                    <strong>Amount Due:</strong> R{{depositAmount}} (50% deposit)<br>
+                    <strong>Due Date:</strong> Today<br>
+                    <strong>Event Date:</strong> {{eventDate}}
+                </p>
+            </div>
+
+            <!-- Payment Instructions -->
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="color: #ff6b35; margin-top: 0;">💳 Make Your Payment</h3>
+                <p style="color: #666; margin: 0 0 15px 0;">
+                    Contact us to receive your secure payment link:
+                </p>
+                <div style="text-align: center; margin: 20px 0;">
+                    <a href="mailto:{{businessEmail}}" style="background: #ff6b35; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">
+                        📧 Email for Payment Link
+                    </a>
+                </div>
+                <div style="text-align: center; margin: 20px 0;">
+                    <a href="tel:{{businessPhone}}" style="background: #28a745; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">
+                        📱 Call Us Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Preparation Update -->
+            <div style="background: #e8f4fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="color: #1e5a96; margin-top: 0;">🔥 We're Getting Ready for You!</h3>
+                <p style="color: #1e5a96; margin: 0;">
+                    Our team is already preparing for your event:
+                </p>
+                <ul style="color: #1e5a96; line-height: 1.6; margin: 10px 0; padding-left: 20px;">
+                    <li>Menu planning and ingredient sourcing</li>
+                    <li>Equipment preparation and testing</li>
+                    <li>Staff scheduling and briefing</li>
+                    <li>Final logistics coordination</li>
+                </ul>
+            </div>
+
+            <!-- Payment Schedule Reminder -->
+            <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="color: #1e5a96; margin-top: 0;">📋 Payment Schedule</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 8px 0; color: #333;">✅ Booking Fee (R500):</td>
+                        <td style="padding: 8px 0; color: #28a745; font-weight: bold;">PAID</td>
+                    </tr>
+                    <tr style="background: #fff3cd;">
+                        <td style="padding: 8px 0; color: #333;">⏰ 50% Deposit:</td>
+                        <td style="padding: 8px 0; color: #856404; font-weight: bold;">DUE NOW</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #333;">📅 Final Payment (50%):</td>
+                        <td style="padding: 8px 0; color: #666;">2 days before event</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Contact Information -->
+            <div style="text-align: center; margin: 30px 0;">
+                <h3 style="color: #333;">Questions About Your Event?</h3>
+                <p style="color: #666; margin: 10px 0;">
+                    📧 <a href="mailto:{{businessEmail}}" style="color: #ff6b35; text-decoration: none;">{{businessEmail}}</a><br>
+                    📱 <a href="tel:{{businessPhone}}" style="color: #ff6b35; text-decoration: none;">{{businessPhone}}</a>
+                </p>
+                <p style="color: #666; font-size: 14px; margin: 15px 0;">
+                    Office Hours: Monday - Friday, 9:00 AM - 5:00 PM
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background: #333; color: white; padding: 20px; text-align: center;">
+            <h3 style="margin: 0 0 10px 0; color: #ff6b35;">Thys Gemaak Spitbraai</h3>
+            <p style="margin: 5px 0; font-size: 14px;">Premium Spitbraai Catering • Western Cape, South Africa</p>
+            <p style="margin: 15px 0 5px 0; font-size: 12px; color: #ccc;">
+                We can't wait to make your event amazing!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
